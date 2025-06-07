@@ -21,7 +21,7 @@ import axios from 'axios';
 import { doc, setDoc } from "firebase/firestore";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { db } from "../service/firebaseConfig";
-import { useNavigate } from "react-router";
+import { useNavigate } from 'react-router-dom';
 
 
 function CreateTrip() {

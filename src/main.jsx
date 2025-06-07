@@ -41,7 +41,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
  
     <Header />
     <Toaster />
- <RouterProvider router={router} />
+ <RouterProvider router={router} 
+ 
+ 
+ />
  
   </GoogleOAuthProvider>
 </React.StrictMode>,

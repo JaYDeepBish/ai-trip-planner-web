@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { getDoc, doc } from "firebase/firestore";
 import { db } from "../../service/firebaseConfig";
 import { toast } from "sonner";
@@ -7,6 +7,7 @@ import InfoSection from "../components/infoSection";
 import Hotels from "../components/Hotels";
 import PlacesToVisit from "../components/PlacesToVisit";
 import Footer from "../components/Footer";
+
 
 function Viewtrip() {
   const { tripId } = useParams();
