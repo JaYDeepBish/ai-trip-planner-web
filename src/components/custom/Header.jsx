@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ui/Button";
+import { Button } from "../ui/button";
 import { useEffect } from "react";
 import {
   Popover,
@@ -67,7 +67,14 @@ const GetUserProfile=(tokenInfo)=>{
          </a>
          <Popover>
   <PopoverTrigger>
-             <img src={user?.picture}  className='h-[35px] w-[35-px] rounded-full'/>
+            <img
+  src={user?.picture || './placeholder.jpg'}
+  onError={(e) => {
+    e.target.onerror = null; // Prevent infinite loop
+    e.target.src = './placeholder.jpg';
+  }}
+  className="h-[35px] w-[35px] rounded-full object-cover"
+/>
 
   </PopoverTrigger>
   <PopoverContent>

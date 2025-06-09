@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
 import { Input } from "@/components/ui/input";
 import { AI_PROMPT, SelectBudgetOptions, SelectTravelsList } from "../constants/options";
-import { Button } from "../components/ui/Button";
+import { Button } from "../components/ui/button";
 import { toast } from "sonner";
 import { chatSession } from "../service/AIModal";
 import {
