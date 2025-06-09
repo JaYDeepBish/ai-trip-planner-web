@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { IoIosSend } from "react-icons/io";
-import { Button } from "../../components/ui/Button";
+import { Button } from "../../components/ui/button";
 import { GetPlaceDetails } from "../../service/GlobalApi";
 import axios from "axios";
 
